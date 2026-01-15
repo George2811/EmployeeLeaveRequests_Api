@@ -1,0 +1,82 @@
+[
+  {
+    "ContainingType": "EmployeeLeaveRequests.Controllers.EmployeeController",
+    "Method": "Cancel",
+    "RelativePath": "api/employees/cancel",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EmployeeLeaveRequests.Controllers.EmployeeController",
+    "Method": "CreateNewRequest",
+    "RelativePath": "api/employees/createnewrequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EmployeeLeaveRequests.Controllers.EmployeeController",
+    "Method": "Get",
+    "RelativePath": "api/employees/get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EmployeeLeaveRequests.Controllers.EmployeeController",
+    "Method": "UpdateStatus",
+    "RelativePath": "api/employees/updatestatus",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EmployeeLeaveRequests.Controllers.LeaveRequestController",
+    "Method": "Cancel",
+    "RelativePath": "api/leaverequests/cancel",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EmployeeLeaveRequests.Controllers.LeaveRequestController",
+    "Method": "CreateNewRequest",
+    "RelativePath": "api/leaverequests/createnewrequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EmployeeLeaveRequests.Controllers.LeaveRequestController",
+    "Method": "Get",
+    "RelativePath": "api/leaverequests/get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EmployeeLeaveRequests.Controllers.LeaveRequestController",
+    "Method": "UpdateStatus",
+    "RelativePath": "api/leaverequests/updatestatus",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

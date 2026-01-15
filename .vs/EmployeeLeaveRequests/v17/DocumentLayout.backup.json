@@ -1,0 +1,433 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|c:\\users\\pr554aa\\source\\repos\\employeeleaverequests\\employeeleaverequests\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|solutionrelative:employeeleaverequests\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|c:\\users\\pr554aa\\source\\repos\\employeeleaverequests\\employeeleaverequests\\controllers\\leaverequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|solutionrelative:employeeleaverequests\\controllers\\leaverequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|c:\\users\\pr554aa\\source\\repos\\employeeleaverequests\\employeeleaverequests\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|solutionrelative:employeeleaverequests\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|c:\\users\\pr554aa\\source\\repos\\employeeleaverequests\\employeeleaverequests\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|solutionrelative:employeeleaverequests\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|c:\\users\\pr554aa\\source\\repos\\employeeleaverequests\\employeeleaverequests\\resources\\saveemployeeresource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|solutionrelative:employeeleaverequests\\resources\\saveemployeeresource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|c:\\users\\pr554aa\\source\\repos\\employeeleaverequests\\employeeleaverequests\\resources\\saveleaverequestresource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|solutionrelative:employeeleaverequests\\resources\\saveleaverequestresource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|c:\\users\\pr554aa\\source\\repos\\employeeleaverequests\\employeeleaverequests\\resources\\employeeresource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|solutionrelative:employeeleaverequests\\resources\\employeeresource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|c:\\users\\pr554aa\\source\\repos\\employeeleaverequests\\employeeleaverequests\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|solutionrelative:employeeleaverequests\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|c:\\users\\pr554aa\\source\\repos\\employeeleaverequests\\employeeleaverequests\\domain\\services\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|solutionrelative:employeeleaverequests\\domain\\services\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|c:\\users\\pr554aa\\source\\repos\\employeeleaverequests\\employeeleaverequests\\domain\\services\\ileaverequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|solutionrelative:employeeleaverequests\\domain\\services\\ileaverequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|c:\\users\\pr554aa\\source\\repos\\employeeleaverequests\\employeeleaverequests\\domain\\services\\communications\\employeeresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|solutionrelative:employeeleaverequests\\domain\\services\\communications\\employeeresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|c:\\users\\pr554aa\\source\\repos\\employeeleaverequests\\employeeleaverequests\\domain\\services\\communications\\leaverequestresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|solutionrelative:employeeleaverequests\\domain\\services\\communications\\leaverequestresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|c:\\users\\pr554aa\\source\\repos\\employeeleaverequests\\employeeleaverequests\\domain\\persistence\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|solutionrelative:employeeleaverequests\\domain\\persistence\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|c:\\users\\pr554aa\\source\\repos\\employeeleaverequests\\employeeleaverequests\\persistence\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|solutionrelative:employeeleaverequests\\persistence\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|c:\\users\\pr554aa\\source\\repos\\employeeleaverequests\\employeeleaverequests\\services\\leaverequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|solutionrelative:employeeleaverequests\\services\\leaverequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|c:\\users\\pr554aa\\source\\repos\\employeeleaverequests\\employeeleaverequests\\persistence\\repository\\leaverequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|solutionrelative:employeeleaverequests\\persistence\\repository\\leaverequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|c:\\users\\pr554aa\\source\\repos\\employeeleaverequests\\employeeleaverequests\\resources\\leaverequestresource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|solutionrelative:employeeleaverequests\\resources\\leaverequestresource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|c:\\users\\pr554aa\\source\\repos\\employeeleaverequests\\employeeleaverequests\\domain\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|solutionrelative:employeeleaverequests\\domain\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|c:\\users\\pr554aa\\source\\repos\\employeeleaverequests\\employeeleaverequests\\domain\\persistence\\repositories\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|solutionrelative:employeeleaverequests\\domain\\persistence\\repositories\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|c:\\users\\pr554aa\\source\\repos\\employeeleaverequests\\employeeleaverequests\\domain\\persistence\\repositories\\ileaverequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|solutionrelative:employeeleaverequests\\domain\\persistence\\repositories\\ileaverequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|c:\\users\\pr554aa\\source\\repos\\employeeleaverequests\\employeeleaverequests\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|solutionrelative:employeeleaverequests\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|c:\\users\\pr554aa\\source\\repos\\employeeleaverequests\\employeeleaverequests\\domain\\persistence\\repositories\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|solutionrelative:employeeleaverequests\\domain\\persistence\\repositories\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|c:\\users\\pr554aa\\source\\repos\\employeeleaverequests\\employeeleaverequests\\domain\\models\\leaverequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|solutionrelative:employeeleaverequests\\domain\\models\\leaverequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|c:\\users\\pr554aa\\source\\repos\\employeeleaverequests\\employeeleaverequests\\exceptions\\exceptionhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4219BB5-E10F-4572-B4A3-1BC468900DF4}|EmployeeLeaveRequests\\EmployeeLeaveRequests.csproj|solutionrelative:employeeleaverequests\\exceptions\\exceptionhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 254,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "EmployeeLeaveRequests\\Controllers\\EmployeeController.cs",
+              "ToolTip": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "EmployeeLeaveRequests\\Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwAUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T01:34:12.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SaveEmployeeResource.cs",
+              "DocumentMoniker": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Resources\\SaveEmployeeResource.cs",
+              "RelativeDocumentMoniker": "EmployeeLeaveRequests\\Resources\\SaveEmployeeResource.cs",
+              "ToolTip": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Resources\\SaveEmployeeResource.cs",
+              "RelativeToolTip": "EmployeeLeaveRequests\\Resources\\SaveEmployeeResource.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T01:31:23.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EmployeeResource.cs",
+              "DocumentMoniker": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Resources\\EmployeeResource.cs",
+              "RelativeDocumentMoniker": "EmployeeLeaveRequests\\Resources\\EmployeeResource.cs",
+              "ToolTip": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Resources\\EmployeeResource.cs",
+              "RelativeToolTip": "EmployeeLeaveRequests\\Resources\\EmployeeResource.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T01:30:50.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SaveLeaveRequestResource.cs",
+              "DocumentMoniker": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Resources\\SaveLeaveRequestResource.cs",
+              "RelativeDocumentMoniker": "EmployeeLeaveRequests\\Resources\\SaveLeaveRequestResource.cs",
+              "ToolTip": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Resources\\SaveLeaveRequestResource.cs",
+              "RelativeToolTip": "EmployeeLeaveRequests\\Resources\\SaveLeaveRequestResource.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T03:33:04.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Startup.cs",
+              "RelativeDocumentMoniker": "EmployeeLeaveRequests\\Startup.cs",
+              "ToolTip": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Startup.cs",
+              "RelativeToolTip": "EmployeeLeaveRequests\\Startup.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAkwCgAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T03:37:38.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Program.cs",
+              "RelativeDocumentMoniker": "EmployeeLeaveRequests\\Program.cs",
+              "ToolTip": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Program.cs",
+              "RelativeToolTip": "EmployeeLeaveRequests\\Program.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAYwBYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-13T04:26:56.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LeaveRequestController.cs",
+              "DocumentMoniker": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Controllers\\LeaveRequestController.cs",
+              "RelativeDocumentMoniker": "EmployeeLeaveRequests\\Controllers\\LeaveRequestController.cs",
+              "ToolTip": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Controllers\\LeaveRequestController.cs",
+              "RelativeToolTip": "EmployeeLeaveRequests\\Controllers\\LeaveRequestController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T04:03:42.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EmployeeService.cs",
+              "DocumentMoniker": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Services\\EmployeeService.cs",
+              "RelativeDocumentMoniker": "EmployeeLeaveRequests\\Services\\EmployeeService.cs",
+              "ToolTip": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Services\\EmployeeService.cs",
+              "RelativeToolTip": "EmployeeLeaveRequests\\Services\\EmployeeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T01:23:06.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EmployeeResponse.cs",
+              "DocumentMoniker": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Domain\\Services\\Communications\\EmployeeResponse.cs",
+              "RelativeDocumentMoniker": "EmployeeLeaveRequests\\Domain\\Services\\Communications\\EmployeeResponse.cs",
+              "ToolTip": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Domain\\Services\\Communications\\EmployeeResponse.cs",
+              "RelativeToolTip": "EmployeeLeaveRequests\\Domain\\Services\\Communications\\EmployeeResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T01:29:06.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LeaveRequestResponse.cs",
+              "DocumentMoniker": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Domain\\Services\\Communications\\LeaveRequestResponse.cs",
+              "RelativeDocumentMoniker": "EmployeeLeaveRequests\\Domain\\Services\\Communications\\LeaveRequestResponse.cs",
+              "ToolTip": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Domain\\Services\\Communications\\LeaveRequestResponse.cs",
+              "RelativeToolTip": "EmployeeLeaveRequests\\Domain\\Services\\Communications\\LeaveRequestResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T01:29:09.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Domain\\Persistence\\Contexts\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "EmployeeLeaveRequests\\Domain\\Persistence\\Contexts\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Domain\\Persistence\\Contexts\\AppDbContext.cs*",
+              "RelativeToolTip": "EmployeeLeaveRequests\\Domain\\Persistence\\Contexts\\AppDbContext.cs*",
+              "ViewState": "AgIAABMAAAAAAAAAAAAkwCoAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T01:25:37.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IEmployeeService.cs",
+              "DocumentMoniker": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Domain\\Services\\IEmployeeService.cs",
+              "RelativeDocumentMoniker": "EmployeeLeaveRequests\\Domain\\Services\\IEmployeeService.cs",
+              "ToolTip": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Domain\\Services\\IEmployeeService.cs",
+              "RelativeToolTip": "EmployeeLeaveRequests\\Domain\\Services\\IEmployeeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T01:14:08.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ILeaveRequestService.cs",
+              "DocumentMoniker": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Domain\\Services\\ILeaveRequestService.cs",
+              "RelativeDocumentMoniker": "EmployeeLeaveRequests\\Domain\\Services\\ILeaveRequestService.cs",
+              "ToolTip": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Domain\\Services\\ILeaveRequestService.cs",
+              "RelativeToolTip": "EmployeeLeaveRequests\\Domain\\Services\\ILeaveRequestService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T01:14:12.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LeaveRequestService.cs",
+              "DocumentMoniker": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Services\\LeaveRequestService.cs",
+              "RelativeDocumentMoniker": "EmployeeLeaveRequests\\Services\\LeaveRequestService.cs",
+              "ToolTip": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Services\\LeaveRequestService.cs",
+              "RelativeToolTip": "EmployeeLeaveRequests\\Services\\LeaveRequestService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T03:57:45.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LeaveRequestRepository.cs",
+              "DocumentMoniker": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Persistence\\Repository\\LeaveRequestRepository.cs",
+              "RelativeDocumentMoniker": "EmployeeLeaveRequests\\Persistence\\Repository\\LeaveRequestRepository.cs",
+              "ToolTip": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Persistence\\Repository\\LeaveRequestRepository.cs",
+              "RelativeToolTip": "EmployeeLeaveRequests\\Persistence\\Repository\\LeaveRequestRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T01:19:48.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Persistence\\Repository\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "EmployeeLeaveRequests\\Persistence\\Repository\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Persistence\\Repository\\UnitOfWork.cs",
+              "RelativeToolTip": "EmployeeLeaveRequests\\Persistence\\Repository\\UnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T04:49:47.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Domain\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "EmployeeLeaveRequests\\Domain\\Models\\Employee.cs",
+              "ToolTip": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Domain\\Models\\Employee.cs",
+              "RelativeToolTip": "EmployeeLeaveRequests\\Domain\\Models\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-13T04:30:44.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IEmployeeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Domain\\Persistence\\Repositories\\IEmployeeRepository.cs",
+              "RelativeDocumentMoniker": "EmployeeLeaveRequests\\Domain\\Persistence\\Repositories\\IEmployeeRepository.cs",
+              "ToolTip": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Domain\\Persistence\\Repositories\\IEmployeeRepository.cs",
+              "RelativeToolTip": "EmployeeLeaveRequests\\Domain\\Persistence\\Repositories\\IEmployeeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T01:12:29.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "LeaveRequestResource.cs",
+              "DocumentMoniker": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Resources\\LeaveRequestResource.cs",
+              "RelativeDocumentMoniker": "EmployeeLeaveRequests\\Resources\\LeaveRequestResource.cs",
+              "ToolTip": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Resources\\LeaveRequestResource.cs",
+              "RelativeToolTip": "EmployeeLeaveRequests\\Resources\\LeaveRequestResource.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T03:28:32.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ILeaveRequestRepository.cs",
+              "DocumentMoniker": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Domain\\Persistence\\Repositories\\ILeaveRequestRepository.cs",
+              "RelativeDocumentMoniker": "EmployeeLeaveRequests\\Domain\\Persistence\\Repositories\\ILeaveRequestRepository.cs",
+              "ToolTip": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Domain\\Persistence\\Repositories\\ILeaveRequestRepository.cs",
+              "RelativeToolTip": "EmployeeLeaveRequests\\Domain\\Persistence\\Repositories\\ILeaveRequestRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T03:29:35.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\appsettings.json",
+              "RelativeDocumentMoniker": "EmployeeLeaveRequests\\appsettings.json",
+              "ToolTip": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\appsettings.json",
+              "RelativeToolTip": "EmployeeLeaveRequests\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-14T04:05:21.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Domain\\Persistence\\Repositories\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "EmployeeLeaveRequests\\Domain\\Persistence\\Repositories\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Domain\\Persistence\\Repositories\\IUnitOfWork.cs",
+              "RelativeToolTip": "EmployeeLeaveRequests\\Domain\\Persistence\\Repositories\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T03:29:42.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ExceptionHandlerMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Exceptions\\ExceptionHandlerMiddleware.cs",
+              "RelativeDocumentMoniker": "EmployeeLeaveRequests\\Exceptions\\ExceptionHandlerMiddleware.cs",
+              "ToolTip": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Exceptions\\ExceptionHandlerMiddleware.cs",
+              "RelativeToolTip": "EmployeeLeaveRequests\\Exceptions\\ExceptionHandlerMiddleware.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAADwvyEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T03:25:04.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "LeaveRequest.cs",
+              "DocumentMoniker": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Domain\\Models\\LeaveRequest.cs",
+              "RelativeDocumentMoniker": "EmployeeLeaveRequests\\Domain\\Models\\LeaveRequest.cs",
+              "ToolTip": "C:\\Users\\PR554AA\\source\\repos\\EmployeeLeaveRequests\\EmployeeLeaveRequests\\Domain\\Models\\LeaveRequest.cs",
+              "RelativeToolTip": "EmployeeLeaveRequests\\Domain\\Models\\LeaveRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-13T04:31:54.265Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

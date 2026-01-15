@@ -1,0 +1,23 @@
+﻿namespace EmployeeLeaveRequests.Domain.Services.Communications
+{
+    public class BaseResponse<T>
+    {
+        public bool Success { get; protected set; }
+        public string Message { get; set; }
+        public T Resource { get; set; }
+
+        public BaseResponse(T resource)
+        {
+            Resource = resource;
+            Success = true;
+            Message = string.Empty;
+        }
+
+        public BaseResponse(string message)
+        {
+            Success = false;
+            Message = message;
+        }
+
+    }
+}
