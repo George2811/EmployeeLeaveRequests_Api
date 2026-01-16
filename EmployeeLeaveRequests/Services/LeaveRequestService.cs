@@ -30,6 +30,12 @@ namespace EmployeeLeaveRequests.Services
             var leaveRequest = await _leaveRequestRepository.FindById(leaveRequestId);
             if (leaveRequest == null) return new LeaveRequestResponse($"Leave request with Id {employee.Id} does not exists.");
 
+            if(leaveRequest.IsApproved()) return new LeaveRequestResponse($"Leave request with Id {employee.Id} has already been approved.");
+
+            var hasApprovedOverlappingLeave = await _leaveRequestRepository.HasApprovedOverlappingLeave(employee.Id, leaveRequest.StartDate, leaveRequest.EndDate);
+
+            if(hasApprovedOverlappingLeave) return new LeaveRequestResponse($"There is already a leave request between those dates.");
+
             leaveRequest.Approve();
 
             try

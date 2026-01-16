@@ -20,6 +20,7 @@ namespace EmployeeLeaveRequests.Domain.Models
         }
         public void Approve() => Status = LeaveStatus.APPROVED;
         public void PendingApproval() => Status = LeaveStatus.PENDING;
+        public bool IsApproved() => Status == LeaveStatus.APPROVED;
 
     }
 }

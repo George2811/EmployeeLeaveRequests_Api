@@ -40,17 +40,21 @@ namespace EmployeeLeaveRequests.Controllers
 
             var newLeaveRequest = await _leaveRequestService.SaveAsync(_leaveRequest);
 
+            if (!newLeaveRequest.Success) return BadRequest(newLeaveRequest.Message);
+
             var _newResource = _mapper.Map<LeaveRequest, LeaveRequestResource>(newLeaveRequest.Resource);
 
             return Ok(_newResource);
         }
 
         [HttpPut("{leaveRequestId}"), Produces("application/json")]
-        public async Task<IActionResult> UpdateStatus(Guid leaveRequestId, [FromBody] EmployeeResource resource)
+        public async Task<IActionResult> UpdateStatus([FromBody] EmployeeResource resource, Guid leaveRequestId)
         {
             var _employee = _mapper.Map<EmployeeResource, Employee>(resource);
 
             var result = await _leaveRequestService.ApproveAsync(leaveRequestId, _employee);
+
+            if(!result.Success) return BadRequest(result.Message);
 
             var _updatedResource = _mapper.Map<LeaveRequest, LeaveRequestResource>(result.Resource);
 
@@ -61,6 +65,8 @@ namespace EmployeeLeaveRequests.Controllers
         public async Task<IActionResult> Cancel(Guid leaveRequestId, Guid employeeId)
         {
             var result = await _leaveRequestService.CancelAsync(leaveRequestId, employeeId);
+            
+            if (!result.Success) return BadRequest(result.Message);
 
             return Ok(result);
         }
