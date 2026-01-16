@@ -7,7 +7,6 @@ C:\Users\PR554AA\source\repos\EmployeeLeaveRequests\EmployeeLeaveRequests\bin\De
 C:\Users\PR554AA\source\repos\EmployeeLeaveRequests\EmployeeLeaveRequests\bin\Debug\net9.0\EmployeeLeaveRequests.dll
 C:\Users\PR554AA\source\repos\EmployeeLeaveRequests\EmployeeLeaveRequests\bin\Debug\net9.0\EmployeeLeaveRequests.pdb
 C:\Users\PR554AA\source\repos\EmployeeLeaveRequests\EmployeeLeaveRequests\bin\Debug\net9.0\AutoMapper.dll
-C:\Users\PR554AA\source\repos\EmployeeLeaveRequests\EmployeeLeaveRequests\bin\Debug\net9.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\PR554AA\source\repos\EmployeeLeaveRequests\EmployeeLeaveRequests\bin\Debug\net9.0\Azure.Core.dll
 C:\Users\PR554AA\source\repos\EmployeeLeaveRequests\EmployeeLeaveRequests\bin\Debug\net9.0\Azure.Identity.dll
 C:\Users\PR554AA\source\repos\EmployeeLeaveRequests\EmployeeLeaveRequests\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
@@ -83,3 +82,4 @@ C:\Users\PR554AA\source\repos\EmployeeLeaveRequests\EmployeeLeaveRequests\obj\De
 C:\Users\PR554AA\source\repos\EmployeeLeaveRequests\EmployeeLeaveRequests\obj\Debug\net9.0\EmployeeLeaveRequests.pdb
 C:\Users\PR554AA\source\repos\EmployeeLeaveRequests\EmployeeLeaveRequests\obj\Debug\net9.0\EmployeeLeaveRequests.genruntimeconfig.cache
 C:\Users\PR554AA\source\repos\EmployeeLeaveRequests\EmployeeLeaveRequests\obj\Debug\net9.0\ref\EmployeeLeaveRequests.dll
+C:\Users\PR554AA\source\repos\EmployeeLeaveRequests\EmployeeLeaveRequests\obj\Debug\net9.0\EmployeeLeaveRequests.sourcelink.json

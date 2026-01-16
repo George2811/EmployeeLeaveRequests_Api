@@ -1,4 +1,4 @@
-﻿namespace EmployeeLeaveRequests.Domain.Models
+﻿namespace EmployeeLeaveRequests.Domain.Models.Constants
 {
     internal static class LeaveStatus
     {

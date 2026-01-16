@@ -1,4 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using EmployeeLeaveRequests.Domain.Models;
+using EmployeeLeaveRequests.Domain.Services;
+using EmployeeLeaveRequests.Resources;
+using Microsoft.AspNetCore.Mvc;
 
 namespace EmployeeLeaveRequests.Controllers
 {
@@ -6,49 +10,59 @@ namespace EmployeeLeaveRequests.Controllers
     [Route("api/leaverequests")]
     public class LeaveRequestController : ControllerBase
     {
-        private readonly ILogger<LeaveRequestController> _logger;
-        public LeaveRequestController(ILogger<LeaveRequestController> logger)
+        private readonly ILeaveRequestService _leaveRequestService;
+        private readonly IMapper _mapper;
+
+        public LeaveRequestController(ILeaveRequestService leaveRequestService, IMapper mapper)
         {
-            _logger = logger;
+            _leaveRequestService = leaveRequestService;
+            _mapper = mapper;
         }
 
-        //GET ALL
-        //[RBACAuthorize(ActionTag = "CAN-GET-AUTHPROVIDERS")]
-        [HttpGet("[action]"), Produces("application/json")]
-        public async Task<IActionResult> Get()
+        [HttpGet("{employeeId}"), Produces("application/json")]
+        [ProducesResponseType(typeof(IEnumerable<LeaveRequestResource>), 200)]
+        [ProducesResponseType(typeof(BadRequestResult), 404)]
+        public async Task<IEnumerable<LeaveRequestResource>> Get(Guid employeeId)
         {
-            return await Task.Run(() =>
-            {
-                //var result = _authProviderInterface.GetAuthProviders();
-                return Ok();
-            });
+            var leaveRequests = await _leaveRequestService.ListAsync(employeeId);
+
+            var resources = _mapper.Map<IEnumerable<LeaveRequest>, IEnumerable<LeaveRequestResource>>(leaveRequests);
+
+            return resources;
         }
 
-        [HttpPost("[action]"), Produces("application/json")]
-        public async Task<IActionResult> CreateNewRequest()
+        [HttpPost(), Produces("application/json")]
+        [ProducesResponseType(typeof(LeaveRequestResource), 200)]
+        [ProducesResponseType(typeof(BadRequestResult), 404)]
+        public async Task<IActionResult> CreateNewRequest([FromBody] SaveLeaveRequestResource resource)
         {
-            return await Task.Run(() =>
-            {
-                return Ok();
-            });
+            var _leaveRequest = _mapper.Map<SaveLeaveRequestResource, LeaveRequest>(resource);
+
+            var newLeaveRequest = await _leaveRequestService.SaveAsync(_leaveRequest);
+
+            var _newResource = _mapper.Map<LeaveRequest, LeaveRequestResource>(newLeaveRequest.Resource);
+
+            return Ok(_newResource);
         }
 
-        [HttpPut("[action]"), Produces("application/json")]
-        public async Task<IActionResult> UpdateStatus()
+        [HttpPut("{leaveRequestId}"), Produces("application/json")]
+        public async Task<IActionResult> UpdateStatus(Guid leaveRequestId, [FromBody] EmployeeResource resource)
         {
-            return await Task.Run(() =>
-            {
-                return Ok();
-            });
+            var _employee = _mapper.Map<EmployeeResource, Employee>(resource);
+
+            var result = await _leaveRequestService.ApproveAsync(leaveRequestId, _employee);
+
+            var _updatedResource = _mapper.Map<LeaveRequest, LeaveRequestResource>(result.Resource);
+
+            return Ok(_updatedResource);
         }
 
-        [HttpDelete("[action]"), Produces("application/json")]
-        public async Task<IActionResult> Cancel()
+        [HttpDelete("{leaveRequestId}/{employeeId}"), Produces("application/json")]
+        public async Task<IActionResult> Cancel(Guid leaveRequestId, Guid employeeId)
         {
-            return await Task.Run(() =>
-            {
-                return Ok();
-            });
+            var result = await _leaveRequestService.CancelAsync(leaveRequestId, employeeId);
+
+            return Ok(result);
         }
     }
 }

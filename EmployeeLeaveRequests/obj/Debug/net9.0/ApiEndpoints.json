@@ -21,16 +21,6 @@
   },
   {
     "ContainingType": "EmployeeLeaveRequests.Controllers.EmployeeController",
-    "Method": "Get",
-    "RelativePath": "api/employees/get",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "EmployeeLeaveRequests.Controllers.EmployeeController",
     "Method": "UpdateStatus",
     "RelativePath": "api/employees/updatestatus",
     "HttpMethod": "PUT",
@@ -41,42 +31,106 @@
   },
   {
     "ContainingType": "EmployeeLeaveRequests.Controllers.LeaveRequestController",
-    "Method": "Cancel",
-    "RelativePath": "api/leaverequests/cancel",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "EmployeeLeaveRequests.Controllers.LeaveRequestController",
     "Method": "CreateNewRequest",
-    "RelativePath": "api/leaverequests/createnewrequest",
+    "RelativePath": "api/leaverequests",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
+    "Parameters": [
+      {
+        "Name": "resource",
+        "Type": "EmployeeLeaveRequests.Resources.SaveLeaveRequestResource",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "EmployeeLeaveRequests.Resources.LeaveRequestResource",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.BadRequestResult",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
   },
   {
     "ContainingType": "EmployeeLeaveRequests.Controllers.LeaveRequestController",
     "Method": "Get",
-    "RelativePath": "api/leaverequests/get",
+    "RelativePath": "api/leaverequests/{employeeId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
+    "Parameters": [
+      {
+        "Name": "employeeId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[EmployeeLeaveRequests.Resources.LeaveRequestResource, EmployeeLeaveRequests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.BadRequestResult",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
   },
   {
     "ContainingType": "EmployeeLeaveRequests.Controllers.LeaveRequestController",
     "Method": "UpdateStatus",
-    "RelativePath": "api/leaverequests/updatestatus",
+    "RelativePath": "api/leaverequests/{leaveRequestId}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "leaveRequestId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "resource",
+        "Type": "EmployeeLeaveRequests.Resources.EmployeeResource",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EmployeeLeaveRequests.Controllers.LeaveRequestController",
+    "Method": "Cancel",
+    "RelativePath": "api/leaverequests/{leaveRequestId}/{employeeId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "leaveRequestId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "employeeId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   }
 ]

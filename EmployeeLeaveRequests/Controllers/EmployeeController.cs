@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using EmployeeLeaveRequests.Resources;
+using Microsoft.AspNetCore.Mvc;
 
 namespace EmployeeLeaveRequests.Controllers
 {
@@ -14,15 +15,15 @@ namespace EmployeeLeaveRequests.Controllers
 
         //GET ALL
         //[RBACAuthorize(ActionTag = "CAN-GET-AUTHPROVIDERS")]
-        [HttpGet("[action]"), Produces("application/json")]
-        public async Task<IActionResult> Get()
-        {
-            return await Task.Run(() =>
-            {
-                //var result = _authProviderInterface.GetAuthProviders();
-                return Ok();
-            });
-        }
+        //[HttpGet("[action]"), Produces("application/json")]
+        //[ProducesResponseType(typeof(IEnumerable<EmployeeResource>), 200)]
+        //[ProducesResponseType(typeof(BadRequestResult), 404)]
+        //public async Task<IEnumerable<EmployeeResource>> Get()
+        //{
+        //    var result = new List<EmployeeResource>();
+        //    return Ok(result);
+
+        //}
 
         [HttpPost("[action]"), Produces("application/json")]
         public async Task<IActionResult> CreateNewRequest()

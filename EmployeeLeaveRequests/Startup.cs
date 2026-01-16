@@ -1,10 +1,13 @@
-﻿using EmployeeLeaveRequests.Domain.Persistence.Contexts;
+﻿using AutoMapper;
+using EmployeeLeaveRequests.Domain.Persistence.Contexts;
 using EmployeeLeaveRequests.Domain.Persistence.Repositories;
 using EmployeeLeaveRequests.Domain.Services;
+using EmployeeLeaveRequests.Exceptions;
+using EmployeeLeaveRequests.Mapping;
 using EmployeeLeaveRequests.Persistence.Repository;
 using EmployeeLeaveRequests.Services;
-using EmployeeLeaveRequests.Exceptions;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi;
 
 namespace EmployeeLeaveRequests
@@ -44,7 +47,17 @@ namespace EmployeeLeaveRequests
             services.AddRouting(options => options.LowercaseUrls = true);
 
             // AutoMapper Setup
-            services.AddAutoMapper(typeof(Startup).Assembly);
+            //services.AddAutoMapper(typeof(Startup).Assembly);
+
+            var loggerFactory = new LoggerFactory();
+            var mapperConfig = new MapperConfiguration(cfg =>
+            {
+                cfg.AddProfile<ResourceToModelProfile>();
+                cfg.AddProfile<ModelToResourceProfile>();
+            }, loggerFactory);
+
+            IMapper mapper = mapperConfig.CreateMapper();
+            services.AddSingleton(mapper);
 
             services.AddSwaggerGen(c =>
             {

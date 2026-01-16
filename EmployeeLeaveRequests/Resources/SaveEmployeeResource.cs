@@ -9,6 +9,6 @@ namespace EmployeeLeaveRequests.Resources
         [Required]
         public string Email { get; set; }
         [Required]
-        public long Role { get; set; }
+        public string Role { get; set; }
     }
 }
