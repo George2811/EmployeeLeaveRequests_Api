@@ -20,23 +20,37 @@ namespace EmployeeLeaveRequests.Services
             _employeeRepository = employeeRepository;
         }
 
-        public async Task<LeaveRequestResponse> ApproveAsync(Guid leaveRequestId, Employee _employee)
+        public async Task<LeaveRequestResponse> UpdateStatusAsync(Guid userId, LeaveRequest _leaveRequest)
         {
-            var employee = await _employeeRepository.FindById(_employee.Id);
+            var employee = await _employeeRepository.FindById(userId);
 
-            if (employee == null) return new LeaveRequestResponse($"Employee with Id {_employee.Id} does not exists.");
-            if (employee.Role != Role.MANAGER) return new LeaveRequestResponse($"User {employee.Email} does not have the permission to approve.");
+            if (employee == null) return new LeaveRequestResponse($"Employee with Id {userId} does not exists.");
+            if (employee.Role != Role.MANAGER) return new LeaveRequestResponse($"User {employee.Email} does not have the permission to update status.");
 
-            var leaveRequest = await _leaveRequestRepository.FindById(leaveRequestId);
-            if (leaveRequest == null) return new LeaveRequestResponse($"Leave request with Id {employee.Id} does not exists.");
+            var leaveRequest = await _leaveRequestRepository.FindById(_leaveRequest.Id);
+            if (leaveRequest == null) return new LeaveRequestResponse($"Leave request with Id {_leaveRequest.Id} does not exists.");
 
-            if(leaveRequest.IsApproved()) return new LeaveRequestResponse($"Leave request with Id {employee.Id} has already been approved.");
+            // Pide Aprobar pero ya está aprobada
+            if(_leaveRequest.IsApproved() && leaveRequest.IsApproved()) return new LeaveRequestResponse($"Leave request with Id {leaveRequest.Id} has already been approved.");
 
-            var hasApprovedOverlappingLeave = await _leaveRequestRepository.HasApprovedOverlappingLeave(employee.Id, leaveRequest.StartDate, leaveRequest.EndDate);
+            // Pide Rechazar pero ya está rechazada
+            if (_leaveRequest.IsRejected() && leaveRequest.IsRejected()) return new LeaveRequestResponse($"Leave request with Id {leaveRequest.Id} has already been rejected.");
 
-            if(hasApprovedOverlappingLeave) return new LeaveRequestResponse($"There is already a leave request between those dates.");
+            var hasApprovedOverlappingLeave = await _leaveRequestRepository.HasApprovedOverlappingLeave(_leaveRequest.EmployeeId, leaveRequest.StartDate, leaveRequest.EndDate);
 
-            leaveRequest.Approve();
+            if(_leaveRequest.IsApproved() && hasApprovedOverlappingLeave) return new LeaveRequestResponse($"No overlap is allowed: An approved leave request already exists between those dates.");
+
+            switch (_leaveRequest.Status)
+            {
+                case LeaveStatus.APPROVED:
+                    leaveRequest.Approve();
+                    break;
+                case LeaveStatus.REJECTED:
+                    leaveRequest.Reject();
+                    break;
+                default:
+                    break;
+            }
 
             try
             {
@@ -51,17 +65,17 @@ namespace EmployeeLeaveRequests.Services
             }
         }
 
-        public async Task<LeaveRequestResponse> CancelAsync(Guid leaveRequestId, Guid employeeId)
+        public async Task<LeaveRequestResponse> CancelAsync(Guid leaveRequestId, Guid userId)
         {
             var leaveRequest = await _leaveRequestRepository.FindById(leaveRequestId);
             if (leaveRequest == null) return new LeaveRequestResponse($"Leave request with Id {leaveRequestId} does not exists.");
-            if(leaveRequest.EmployeeId != employeeId) return new LeaveRequestResponse($"User with Id {employeeId} does not have the permission to cancel.");
+            if(leaveRequest.EmployeeId != userId) return new LeaveRequestResponse($"User with Id {userId} does not have the permission to cancel.");
 
             try
             {
                 _leaveRequestRepository.Remove(leaveRequest);
                 await _unitOfWork.CompleteAsync();
-                return new LeaveRequestResponse($"Leave Request with Id {leaveRequestId} was removed successfully.");
+                return new LeaveRequestResponse(leaveRequest);
             }
             catch (Exception ex)
             {
@@ -93,7 +107,7 @@ namespace EmployeeLeaveRequests.Services
 
             if (days > 15)
             {
-                _leaveRequest.Reject("Exceeds 15 consecutive days. Manager override required.");
+                _leaveRequest.Reject();
             }
             else
             {

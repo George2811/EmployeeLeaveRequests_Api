@@ -10,9 +10,8 @@ namespace EmployeeLeaveRequests.Resources
         public DateTime StartDate { get; set; }
         [Required]
         public DateTime EndDate { get; set; }
-        
-        public string Status { get; set; }
         [Required]
         public string Reason { get; set; }
+        public string? Status { get; set; }
     }
 }

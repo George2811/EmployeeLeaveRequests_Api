@@ -3,9 +3,11 @@ using EmployeeLeaveRequests.Domain.Persistence.Contexts;
 using EmployeeLeaveRequests.Domain.Persistence.Repositories;
 using EmployeeLeaveRequests.Domain.Services;
 using EmployeeLeaveRequests.Exceptions;
+using EmployeeLeaveRequests.Extensions;
 using EmployeeLeaveRequests.Mapping;
 using EmployeeLeaveRequests.Persistence.Repository;
 using EmployeeLeaveRequests.Services;
+using EmployeeLeaveRequests.Services.Auth;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi;
@@ -59,6 +61,11 @@ namespace EmployeeLeaveRequests
             IMapper mapper = mapperConfig.CreateMapper();
             services.AddSingleton(mapper);
 
+            services.AddJwtAuthentication(Configuration);
+            services.AddScoped<IJwtTokenService, JwtTokenService>();
+
+            services.AddAuthorization();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "EMPLOYEE LEAVE REQUESTS", Version = "v1" });
@@ -86,8 +93,8 @@ namespace EmployeeLeaveRequests
                 .AllowCredentials());
 
             //Authentication Support
-            //app.UseAuthentication();
-            //app.UseAuthorization();
+            app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseMiddleware<ExceptionHandlerMiddleware>();
             app.UseEndpoints(endpoints =>

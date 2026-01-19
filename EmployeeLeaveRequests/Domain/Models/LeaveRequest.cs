@@ -13,14 +13,11 @@ namespace EmployeeLeaveRequests.Domain.Models
         public Employee Employee { get; set; }
 
         public int GetDurationInDays => (EndDate - StartDate).Days + 1;
-        public void Reject(string reason)
-        {
-            Status = LeaveStatus.REJECTED;
-            Reason = reason;
-        }
         public void Approve() => Status = LeaveStatus.APPROVED;
+        public void Reject() => Status = LeaveStatus.REJECTED;
         public void PendingApproval() => Status = LeaveStatus.PENDING;
         public bool IsApproved() => Status == LeaveStatus.APPROVED;
+        public bool IsRejected() => Status == LeaveStatus.REJECTED;
 
     }
 }

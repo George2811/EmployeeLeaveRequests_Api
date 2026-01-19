@@ -22,6 +22,7 @@ namespace EmployeeLeaveRequests.Domain.Persistence.Contexts
             builder.Entity<Employee>().Property(s => s.Id).IsRequired().ValueGeneratedOnAdd();
             builder.Entity<Employee>().Property(s => s.Name).IsRequired().HasMaxLength(250);
             builder.Entity<Employee>().Property(s => s.Email).IsRequired().HasMaxLength(250);
+            builder.Entity<Employee>().Property(s => s.Password).IsRequired().HasMaxLength(250);
             builder.Entity<Employee>().Property(s => s.Role).IsRequired().HasMaxLength(250);
 
             builder.Entity<LeaveRequest>().ToTable("LeaveRequests");

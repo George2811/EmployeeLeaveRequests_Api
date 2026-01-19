@@ -2,10 +2,12 @@
 using EmployeeLeaveRequests.Domain.Models;
 using EmployeeLeaveRequests.Domain.Services;
 using EmployeeLeaveRequests.Resources;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EmployeeLeaveRequests.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/leaverequests")]
     public class LeaveRequestController : ControllerBase
@@ -47,12 +49,14 @@ namespace EmployeeLeaveRequests.Controllers
             return Ok(_newResource);
         }
 
-        [HttpPut("{leaveRequestId}"), Produces("application/json")]
-        public async Task<IActionResult> UpdateStatus([FromBody] EmployeeResource resource, Guid leaveRequestId)
+        [HttpPut("{userId}"), Produces("application/json")]
+        [ProducesResponseType(typeof(LeaveRequestResource), 200)]
+        [ProducesResponseType(typeof(BadRequestResult), 404)]
+        public async Task<IActionResult> UpdateStatus([FromBody] LeaveRequestResource resource, Guid userId)
         {
-            var _employee = _mapper.Map<EmployeeResource, Employee>(resource);
+            var _leaveRequest = _mapper.Map<LeaveRequestResource, LeaveRequest>(resource);
 
-            var result = await _leaveRequestService.ApproveAsync(leaveRequestId, _employee);
+            var result = await _leaveRequestService.UpdateStatusAsync(userId, _leaveRequest);
 
             if(!result.Success) return BadRequest(result.Message);
 
@@ -61,10 +65,10 @@ namespace EmployeeLeaveRequests.Controllers
             return Ok(_updatedResource);
         }
 
-        [HttpDelete("{leaveRequestId}/{employeeId}"), Produces("application/json")]
-        public async Task<IActionResult> Cancel(Guid leaveRequestId, Guid employeeId)
+        [HttpDelete("{leaveRequestId}/{userId}"), Produces("application/json")]
+        public async Task<IActionResult> Cancel(Guid leaveRequestId, Guid userId)
         {
-            var result = await _leaveRequestService.CancelAsync(leaveRequestId, employeeId);
+            var result = await _leaveRequestService.CancelAsync(leaveRequestId, userId);
             
             if (!result.Success) return BadRequest(result.Message);
 

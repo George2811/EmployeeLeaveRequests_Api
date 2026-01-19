@@ -9,5 +9,6 @@ namespace EmployeeLeaveRequests.Domain.Persistence.Repositories
         Task AddAsync(Employee _employee);
         void Update(Employee _employee);
         void Remove(Employee _employee);
+        Task<Employee> GetByEmailAsync(string email);
     }
 }

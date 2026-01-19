@@ -21,6 +21,11 @@ namespace EmployeeLeaveRequests.Persistence.Repository
             return await _context.Employees.FindAsync(id);
         }
 
+        public async Task<Employee> GetByEmailAsync(string email)
+        {
+            return await _context.Employees.Where(e => e.Email == email).FirstOrDefaultAsync();
+        }
+
         public async Task<IEnumerable<Employee>> ListAsync()
         {
             return await _context.Employees.ToListAsync();

@@ -1,6 +1,4 @@
-﻿using EmployeeLeaveRequests.Domain.Models;
-
-namespace EmployeeLeaveRequests.Resources
+﻿namespace EmployeeLeaveRequests.Resources
 {
     public class LeaveRequestResource
     {

@@ -8,7 +8,7 @@ namespace EmployeeLeaveRequests.Domain.Services
         Task<IEnumerable<LeaveRequest>> ListAsync(Guid _employeeId);
         Task<LeaveRequestResponse> FindAsyncById(Guid id);
         Task<LeaveRequestResponse> SaveAsync(LeaveRequest _leaveRequest);
-        Task<LeaveRequestResponse> ApproveAsync(Guid leaveRequestId, Employee _employee);
-        Task<LeaveRequestResponse> CancelAsync(Guid leaveRequestId, Guid employeeId);
+        Task<LeaveRequestResponse> UpdateStatusAsync(Guid userId, LeaveRequest _leaveRequest);
+        Task<LeaveRequestResponse> CancelAsync(Guid leaveRequestId, Guid userId);
     }
 }
