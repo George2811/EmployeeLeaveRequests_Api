@@ -2,6 +2,7 @@
 using EmployeeLeaveRequests.Domain.Models.Constants;
 using EmployeeLeaveRequests.Domain.Persistence.Contexts;
 using EmployeeLeaveRequests.Domain.Persistence.Repositories;
+using EmployeeLeaveRequests.Resources;
 using Microsoft.EntityFrameworkCore;
 
 namespace EmployeeLeaveRequests.Persistence.Repository
@@ -24,7 +25,29 @@ namespace EmployeeLeaveRequests.Persistence.Repository
 
         public async Task<IEnumerable<LeaveRequest>> ListAsync()
         {
-            return await _context.LeaveRequests.ToListAsync();
+            return await _context.LeaveRequests
+            .AsNoTracking()
+            .Join(
+                _context.Employees,
+                lr => lr.EmployeeId,
+                e => e.Id,
+                (lr, e) => new LeaveRequest
+                {
+                    Id = lr.Id,
+                    StartDate = lr.StartDate,
+                    EndDate = lr.EndDate,
+                    Status = lr.Status.ToString(),
+                    Reason = lr.Reason,
+                    Employee = new Employee
+                    {
+                        Id = e.Id,
+                        Name = e.Name,
+                        Email = e.Email,
+                        Role = e.Role
+                    }
+                }
+            )
+            .ToListAsync();
         }
 
         public void Remove(LeaveRequest _leaveRequest)

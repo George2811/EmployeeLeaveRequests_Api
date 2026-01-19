@@ -22,13 +22,13 @@ namespace EmployeeLeaveRequests.Controllers
         }
 
         [HttpGet("{employeeId}"), Produces("application/json")]
-        [ProducesResponseType(typeof(IEnumerable<LeaveRequestResource>), 200)]
+        [ProducesResponseType(typeof(IEnumerable<LeaveRequestDetailedResource>), 200)]
         [ProducesResponseType(typeof(BadRequestResult), 404)]
-        public async Task<IEnumerable<LeaveRequestResource>> Get(Guid employeeId)
+        public async Task<IEnumerable<LeaveRequestDetailedResource>> Get(Guid employeeId)
         {
             var leaveRequests = await _leaveRequestService.ListAsync(employeeId);
 
-            var resources = _mapper.Map<IEnumerable<LeaveRequest>, IEnumerable<LeaveRequestResource>>(leaveRequests);
+            var resources = _mapper.Map<IEnumerable<LeaveRequest>, IEnumerable<LeaveRequestDetailedResource>>(leaveRequests);
 
             return resources;
         }

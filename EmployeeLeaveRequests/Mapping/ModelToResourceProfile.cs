@@ -10,6 +10,7 @@ namespace EmployeeLeaveRequests.Mapping
         {
             CreateMap<Employee, EmployeeResource>();
             CreateMap<LeaveRequest, LeaveRequestResource>();
+            CreateMap<LeaveRequest, LeaveRequestDetailedResource>();
         }
     }
 }

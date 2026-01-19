@@ -1,10 +1,8 @@
-﻿using Azure.Core;
-using EmployeeLeaveRequests.Domain.Models;
+﻿using EmployeeLeaveRequests.Domain.Models;
 using EmployeeLeaveRequests.Domain.Models.Constants;
 using EmployeeLeaveRequests.Domain.Persistence.Repositories;
 using EmployeeLeaveRequests.Domain.Services;
 using EmployeeLeaveRequests.Domain.Services.Communications;
-using Microsoft.VisualBasic;
 
 namespace EmployeeLeaveRequests.Services
 {
@@ -31,10 +29,10 @@ namespace EmployeeLeaveRequests.Services
             if (leaveRequest == null) return new LeaveRequestResponse($"Leave request with Id {_leaveRequest.Id} does not exists.");
 
             // Pide Aprobar pero ya está aprobada
-            if(_leaveRequest.IsApproved() && leaveRequest.IsApproved()) return new LeaveRequestResponse($"Leave request with Id {leaveRequest.Id} has already been approved.");
+            if(_leaveRequest.IsApproved() && leaveRequest.IsApproved()) return new LeaveRequestResponse($"Leave request has already been approved.");
 
             // Pide Rechazar pero ya está rechazada
-            if (_leaveRequest.IsRejected() && leaveRequest.IsRejected()) return new LeaveRequestResponse($"Leave request with Id {leaveRequest.Id} has already been rejected.");
+            if (_leaveRequest.IsRejected() && leaveRequest.IsRejected()) return new LeaveRequestResponse($"Leave request has already been rejected.");
 
             var hasApprovedOverlappingLeave = await _leaveRequestRepository.HasApprovedOverlappingLeave(_leaveRequest.EmployeeId, leaveRequest.StartDate, leaveRequest.EndDate);
 
