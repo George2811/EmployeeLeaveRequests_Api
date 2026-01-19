@@ -33,7 +33,7 @@ Crear/Editar el archivo appsettings para registrar las variables de entorno.
 
 ## Decisiones de Diseño
 
-### Enfoque Domain-Driven Design (DDD) y Clean Architecture
+### 1. Enfoque Domain-Driven Design (DDD) y Clean Architecture
 
 Adpoté Domain-Driven Design (DDD) combinado con Clean Architecture como enfoque arquitectónico principal.
 
@@ -54,19 +54,19 @@ Expone los endpoints HTTP, maneja la serialización de datos, validaciones de en
 Este enfoque permite que el sistema sea altamente mantenible, facilita la incorporación de nuevas funcionalidades y reduce significativamente el impacto de cambios tecnológicos futuros.
 
 
-### Patrones de Software
+### 2. Patrones de Software
 En el proyecto apliqué principalmente el Repository Pattern para desacoplar el dominio de EF Core y el Resource Pattern para evitar exponer entidades del dominio directamente al frontend.
 
 - Repository Pattern: Defino las interfaces en el Domain y sus implementaciones en la capa de Persistence, ello hace que EF Core puede cambiarse por otros ORMS sin afectar el Dominio.
 
 - Resource Pattern: Permitió controlar exactamente qué datos salen del API. Es por ello que los endpoints no devuelven LeaveRequest directamente, sino recursos como LeaveRequestResource.
 
-### Autenticación mediante JWT
+### 3. Autenticación mediante JWT
 La autenticación del sistema se implementó utilizando JWT, una solución ampliamente adoptada para APIs REST.
 
 - Los tokens incluyen información del usuario autenticado y se validan en cada request protegido mediante middleware.
 
-### Buenas prácticas
+### 4. Buenas prácticas
 - **Manejo centralizado de errores**: Se manejó un mecanismo consistente para el manejo de errores, procurando comunicar de forma clara los errores del negocio y no exponer información sensible.
 - **Documentación de la API**: Para documentar la API se utilizó Swagger (OpenAPI), permitiendo generar documentación interactiva de manera automática. Es un punto clave ya que facilita el consumo de la API por parte del frontend y otros clientes.
 - **Uso de varibales de entorno**: Las configuraciones del sistema se manejan mediante archivos appsettings.json y variables de entorno, permitiendo adaptar el comportamiento del backend según el entorno (desarrollo, staging o producción). Ello facilitará la integración con pipelines CI/CD y plataformas cloud.
